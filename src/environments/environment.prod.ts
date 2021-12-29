@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  paypal_api:"liveapi"
 };

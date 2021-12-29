@@ -1,0 +1,57 @@
+ng new project-name 
+
+ng serve --open
+ng serve --o
+ng s --o 
+
+----------------------
+
+
+end 2 end -> testing --> 
+node_modules --> npm , project lib -> node_modules 
+                toastr , express , jquery 
+package.json -->   pom.xml 
+package-lock.json --> exact 
+src/app -> main -> components , html , css 
+src/assets --> static 
+src/enviornment --> development [dummy] , production [live]
+index.html --> SPA 
+main.ts --> main module [ app module ]
+app.module.ts --> components , exteranl - module , routes ,custom modules 
+app-routing.module.ts --> 
+
+browser --> js ---> ts ---> js 
+
+--------------------------
+
+components --> class -> 
+
+1 login.component.ts 
+2 login.component.html 
+3 login.component.css 
+4 login.component.spec.ts 
+
+@Component({
+
+})
+class LoginComponent {
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
