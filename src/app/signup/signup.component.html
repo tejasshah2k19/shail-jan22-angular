@@ -1,1 +1,11 @@
-<p>signup works!</p>
+<h2>Signup</h2>
+
+FirstName : <input type="text"  [(ngModel)]="firstName" name="firstName" /> <br>
+
+Email : <input type="text" name="email" [(ngModel)]="email" /> <br>
+
+Password : <input type="text" name="password" [(ngModel)]="password" /> <br>
+
+<button  (click)="printData()">Signup</button>
+<br>
+{{firstName}}
