@@ -41,6 +41,10 @@ class LoginComponent {
 
 
 
+ng g interface user 
+ng g c components/signup
+ng g s services/user
+                    users -> array 
 
 
 

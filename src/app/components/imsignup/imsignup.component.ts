@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from 'src/app/interface/user';
 import { UserService } from 'src/app/user.service';
 
@@ -10,8 +11,8 @@ import { UserService } from 'src/app/user.service';
 export class IMSignupComponent implements OnInit {
 
  
-  user:User = {email:"",firstName:"",password:""}
-  constructor(private userService:UserService) { }
+  user:User = {email:"",firstName:"",password:"",userId:Math.random().toString().slice(2)}
+  constructor(private userService:UserService,private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -19,8 +20,8 @@ export class IMSignupComponent implements OnInit {
   saveData(){
     console.log(this.user);
    //db insert 
-   this.userService.addUser(this.user)
-    
+   this.userService.addUser(this.user)    
+    this.router.navigateByUrl("/imlistusers")
   }
 
 }

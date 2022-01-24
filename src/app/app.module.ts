@@ -9,6 +9,7 @@ import { SignupComponent } from './signup/signup.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { IMSignupComponent } from './components/imsignup/imsignup.component';
 import { IMListUsersComponent } from './components/imlist-users/imlist-users.component';
+import { EditUserComponent } from './edit-user/edit-user.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { IMListUsersComponent } from './components/imlist-users/imlist-users.com
     SignupComponent,
     CalculatorComponent,
     IMSignupComponent,
-    IMListUsersComponent
+    IMListUsersComponent,
+    EditUserComponent
   ],
   imports: [
     BrowserModule,
