@@ -10,6 +10,11 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { IMSignupComponent } from './components/imsignup/imsignup.component';
 import { IMListUsersComponent } from './components/imlist-users/imlist-users.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { IMLoginComponent } from './components/imlogin/imlogin.component';
+import { IMHomeComponent } from './components/imhome/imhome.component';
+ 
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -19,12 +24,16 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     CalculatorComponent,
     IMSignupComponent,
     IMListUsersComponent,
-    EditUserComponent
+    EditUserComponent,
+    IMLoginComponent,
+    IMHomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -17,6 +17,16 @@ export class UserService {
 
   }
 
+  authenticate(email:string,password:string){
+    let user:User={email:"",firstName:"",password:"",userId:""}
+    for(let i=0;i<this.users.length;i++){
+        if(this.users[i].email == email && this.users[i].password == password){
+          user = this.users[i];
+        }
+      }  
+
+      return user
+  } 
 
   addUser(user: User) {
     this.users.push(user);
