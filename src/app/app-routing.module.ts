@@ -5,6 +5,7 @@ import { IMHomeComponent } from './components/imhome/imhome.component';
 import { IMListUsersComponent } from './components/imlist-users/imlist-users.component';
 import { IMLoginComponent } from './components/imlogin/imlogin.component';
 import { IMSignupComponent } from './components/imsignup/imsignup.component';
+import { ReactiveSignupComponent } from './components/reactive-signup/reactive-signup.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
@@ -17,8 +18,9 @@ const routes: Routes = [
   {path:"imlistusers",component:IMListUsersComponent},
   {path:"edituser/:userId",component:EditUserComponent},
   {path:"imhome",component:IMHomeComponent},
-  {path:"imlogin",component:IMLoginComponent}
+  {path:"imlogin",component:IMLoginComponent},
 
+{path:"reactive-signup",component:ReactiveSignupComponent}
 
 ];
 

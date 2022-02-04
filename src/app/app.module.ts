@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,7 @@ import { IMHomeComponent } from './components/imhome/imhome.component';
  
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
+import { ReactiveSignupComponent } from './components/reactive-signup/reactive-signup.component';
 
 @NgModule({
   declarations: [
@@ -26,12 +27,14 @@ import { ToastrModule } from 'ngx-toastr';
     IMListUsersComponent,
     EditUserComponent,
     IMLoginComponent,
-    IMHomeComponent
+    IMHomeComponent,
+    ReactiveSignupComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot()
   ],
