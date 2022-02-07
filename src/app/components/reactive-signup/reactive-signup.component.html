@@ -1,21 +1,33 @@
-<form   [formGroup]="myForm"  (submit)="saveUser()">
-        FirstName : <input type="text" formControlName="firstName"/>
-    
+<form [formGroup]="myForm" (submit)="saveUser()">
+    FirstName : <input type="text" formControlName="firstName" />
 
-            <span *ngIf="myForm.get('firstName')?.touched">
 
-                     <span   *ngIf="myForm.get('firstName')?.hasError('required')" class="error">Please Enter FirstName</span>
-                    <span   *ngIf="myForm.get('firstName')?.hasError('minlength')" class="error">Please Enter atleast 3 character in FirstName</span>
-            </span>
-        <br><br>
-        Email :<input type="text" formControlName="email"/>   
+    <span *ngIf="myForm.get('firstName')?.touched">
 
-        <br><br>
-        Password : <input type="text" formControlName="password"/>
-        <br><br>
+        <span *ngIf="myForm.get('firstName')?.hasError('required')" class="error">Please Enter FirstName</span>
+        <span *ngIf="myForm.get('firstName')?.hasError('minlength')" class="error">Please Enter atleast 3 character in
+            FirstName</span>
+    </span>
+    <br><br>
+    Email :<input type="text" formControlName="email" />
 
-        Confirm Password : <input type="text" formControlName="confirmPassword"/>
-        <br><br>
-            <input type="submit" value="Signup"     />
+    <br><br>
+    Password : <input type="text" formControlName="password" />
+
+
+    <span *ngIf="myForm.get('password')?.touched">
+
+        <span *ngIf="myForm.get('password')?.hasError('required')" class="error">Please Enter Password</span>
+        <span *ngIf="myForm.get('password')?.hasError('passwordStrength')" class="error">
+            
+            <span *ngIf="myForm.get('password')?.getError('passwordStrength').ln == 0">len > 7 </span>    
+             
+        </span>
+    </span>
+    <br><br>
+
+    Confirm Password : <input type="text" formControlName="confirmPassword" />
+    <br><br>
+    <input type="submit" value="Signup" />
 
 </form>
