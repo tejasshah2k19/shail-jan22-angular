@@ -16,6 +16,7 @@ import { IMHomeComponent } from './components/imhome/imhome.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
 import { ReactiveSignupComponent } from './components/reactive-signup/reactive-signup.component';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ReactiveSignupComponent } from './components/reactive-signup/reactive-s
     EditUserComponent,
     IMLoginComponent,
     IMHomeComponent,
-    ReactiveSignupComponent
+    ReactiveSignupComponent,
+    PipeDemoComponent
   ],
   imports: [
     BrowserModule,

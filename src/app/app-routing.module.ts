@@ -8,6 +8,7 @@ import { IMSignupComponent } from './components/imsignup/imsignup.component';
 import { ReactiveSignupComponent } from './components/reactive-signup/reactive-signup.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
 import { LoginComponent } from './login/login.component';
+import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { SignupComponent } from './signup/signup.component';
 
 const routes: Routes = [
@@ -20,7 +21,8 @@ const routes: Routes = [
   {path:"imhome",component:IMHomeComponent},
   {path:"imlogin",component:IMLoginComponent},
 
-{path:"reactive-signup",component:ReactiveSignupComponent}
+{path:"reactive-signup",component:ReactiveSignupComponent},
+{path:"pipedemo",component:PipeDemoComponent}
 
 ];
 
